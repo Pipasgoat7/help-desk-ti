@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de gerenciamento de chamados de suporte de TI.">
+    <title>HelpDesk TI | Central de Suporte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+
+        <aside class="sidebar">
+            <a href="#" class="brand">
+                <span class="brand-icon">H</span>
+                <span>HelpDesk<span class="brand-light"> TI</span></span>
+            </a>
+
+            <p class="menu-label">MENU PRINCIPAL</p>
+
+            <nav class="navigation">
+                <a href="#dashboard" class="nav-link active">
+                    <span class="nav-icon">▦</span>
+                    Dashboard
+                </a>
+                <a href="#chamados" class="nav-link">
+                    <span class="nav-icon">▤</span>
+                    Todos os chamados
+                </a>
+                <a href="#chamados" class="nav-link">
+                    <span class="nav-icon">◷</span>
+                    Em andamento
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="profile-avatar">TI</div>
+                <div>
+                    <strong>Equipe de TI</strong>
+                    <span>Suporte técnico</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content" id="dashboard">
+            <header class="topbar">
+                <div>
+                    <p class="breadcrumb">Central de suporte / Dashboard</p>
+                    <h1>Painel de chamados</h1>
+                    <p class="subtitle">
+                        Acompanhe e organize as solicitações de TI.
+                    </p>
+                </div>
+
+                <button class="primary-button" type="button">
+                    <span>+</span> Novo chamado
+                </button>
+            </header>
+
+            <section class="stats-grid" aria-label="Resumo dos chamados">
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Total de chamados</span>
+                        <span class="stat-icon blue">▤</span>
+                    </div>
+                    <strong class="stat-number">24</strong>
+                    <p class="stat-description">Solicitações registradas</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Abertos</span>
+                        <span class="stat-icon orange">◷</span>
+                    </div>
+                    <strong class="stat-number">12</strong>
+                    <p class="stat-description">Aguardando atendimento</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Em andamento</span>
+                        <span class="stat-icon purple">⚙</span>
+                    </div>
+                    <strong class="stat-number">8</strong>
+                    <p class="stat-description">Em atendimento pela equipe</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Concluídos</span>
+                        <span class="stat-icon green">✓</span>
+                    </div>
+                    <strong class="stat-number">4</strong>
+                    <p class="stat-description">Atendimentos finalizados</p>
+                </article>
+            </section>
+
+            <section class="tickets-panel" id="chamados">
+                <div class="panel-header">
+                    <div>
+                        <h2>Chamados recentes</h2>
+                        <p>Visualize as últimas solicitações de suporte.</p>
+                    </div>
+
+                    <input
+                        class="search-input"
+                        type="search"
+                        placeholder="Buscar chamado..."
+                        aria-label="Buscar chamado"
+                    >
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Chamado</th>
+                                <th>Categoria</th>
+                                <th>Prioridade</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>#1001</td>
+                                <td>
+                                    <strong>Computador não liga</strong>
+                                    <span class="cell-detail">Carlos Silva</span>
+                                </td>
+                                <td>Hardware</td>
+                                <td><span class="priority high">Alta</span></td>
+                                <td><span class="status open">Aberto</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#1002</td>
+                                <td>
+                                    <strong>Sem acesso à internet</strong>
+                                    <span class="cell-detail">Ana Souza</span>
+                                </td>
+                                <td>Redes</td>
+                                <td><span class="priority urgent">Urgente</span></td>
+                                <td><span class="status progress">Em andamento</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#1003</td>
+                                <td>
+                                    <strong>Instalação de software</strong>
+                                    <span class="cell-detail">Pedro Santos</span>
+                                </td>
+                                <td>Software</td>
+                                <td><span class="priority medium">Média</span></td>
+                                <td><span class="status open">Aberto</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#1004</td>
+                                <td>
+                                    <strong>Impressora sem funcionar</strong>
+                                    <span class="cell-detail">Mariana Lima</span>
+                                </td>
+                                <td>Hardware</td>
+                                <td><span class="priority low">Baixa</span></td>
+                                <td><span class="status done">Concluído</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="panel-footer">
+                    <span>Exibindo 4 chamados de demonstração</span>
+                    <span>HelpDesk TI · Versão 1.0</span>
+                </div>
+            </section>
+
+            <footer class="page-footer">
+                Projeto educacional de suporte técnico de TI.
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
